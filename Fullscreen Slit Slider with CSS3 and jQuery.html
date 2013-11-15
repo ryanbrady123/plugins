@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)http://tympanus.net/Tutorials/FullscreenSlitSlider/index.html -->
+<html lang="en" style="" class=" js no-touch csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Fullscreen Slit Slider with CSS3 and jQuery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Fullscreen Slit Slider with CSS3 and jQuery">
+        <meta name="keywords" content="slit slider, plugin, css3, transitions, jquery, fullscreen, autoplay">
+        <meta name="author" content="Codrops">
+        <link rel="shortcut icon" href="http://tympanus.net/Tutorials/favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="./Fullscreen Slit Slider with CSS3 and jQuery_files/demo.css">
+        <link rel="stylesheet" type="text/css" href="./Fullscreen Slit Slider with CSS3 and jQuery_files/style.css">
+        <link rel="stylesheet" type="text/css" href="./Fullscreen Slit Slider with CSS3 and jQuery_files/custom.css">
+		<script type="text/javascript" async="" src="./Fullscreen Slit Slider with CSS3 and jQuery_files/ga.js"></script><script type="text/javascript" src="./Fullscreen Slit Slider with CSS3 and jQuery_files/modernizr.custom.79639.js"></script>
+		<noscript>
+			&lt;link rel="stylesheet" type="text/css" href="css/styleNoJS.css" /&gt;
+		</noscript>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-7243260-2']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+    <link rel="stylesheet" type="text/css" href="./Fullscreen Slit Slider with CSS3 and jQuery_files/demoad.css"><script type="text/javascript" async="" src="./Fullscreen Slit Slider with CSS3 and jQuery_files/pro.js"></script><script type="text/javascript" id="_bsaPRO_js" src="./Fullscreen Slit Slider with CSS3 and jQuery_files/saved_resource" async="async"></script><script type="text/javascript" async="" src="./Fullscreen Slit Slider with CSS3 and jQuery_files/bsa.js"></script><script type="text/javascript" id="_bsap_js_af25dfd2f1908889af7a1aa5f4dcbd9e" src="./Fullscreen Slit Slider with CSS3 and jQuery_files/s_af25dfd2f1908889af7a1aa5f4dcbd9e.js" async="async"></script><style type="text/css" id="bsa_css">.one{position:relative}.one .bsa_it_ad{display:block;padding:15px;border:1px solid #e1e1e1;background:#f9f9f9;font-family:helvetica,arial,sans-serif;line-height:100%;position:relative}.one .bsa_it_ad a{text-decoration:none}.one .bsa_it_ad a:hover{text-decoration:none}.one .bsa_it_ad .bsa_it_t{display:block;font-size:12px;font-weight:bold;color:#212121;line-height:125%;padding:0 0 5px 0}.one .bsa_it_ad .bsa_it_d{display:block;font-size:11px;color:#434343;font-size:12px;line-height:135%}.one .bsa_it_ad .bsa_it_i{float:left;margin:0 15px 10px 0}.one .bsa_it_p{display:block;text-align:right;position:absolute;bottom:10px;right:15px}.one .bsa_it_p a{font-size:10px;color:#666;text-decoration:none}.one .bsa_it_ad .bsa_it_p a:hover{font-style:italic}</style></head>
+    <body>
+        
+        <div class="container demo-1">
+		
+			<!-- Codrops top bar -->
+            <div class="codrops-top clearfix">
+                <a href="http://tympanus.net/Tutorials/CSS3BouncingBall/">
+                    <strong>« Previous Demo: </strong>3D Bouncing Ball with CSS3
+                </a>
+                <span class="right">
+                    <a href="http://tympanus.net/codrops/?p=9357">
+                        <strong>Back to the Codrops Article</strong>
+                    </a>
+                </span>
+                <div class="clr"></div>
+            </div><!--/ Codrops top bar -->
+
+            <nav class="codrops-demos">
+				<a class="current-demo" href="./Fullscreen Slit Slider with CSS3 and jQuery_files/Fullscreen Slit Slider with CSS3 and jQuery.html">Demo 1</a>
+				<a href="http://tympanus.net/Tutorials/FullscreenSlitSlider/index2.html">Demo 2</a>
+			</nav>
+
+            <div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider" style="width: 1280px; height: 658px;">
+				
+					<div class="sl-slides-wrapper"><div class="sl-slide bg-1 sl-slide-horizontal" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2" style="display: none; z-index: 1;">
+						<div class="sl-content-wrapper" style="width: 1280px; height: 658px;"><div class="sl-content"><div class="sl-slide-inner">
+							<div class="deco" data-icon="H"></div>
+							<h2>A bene placito</h2>
+							<blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
+						</div></div></div>
+					</div><div class="sl-slide bg-2 sl-slide-vertical" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5" style="display: none; z-index: 1;">
+						<div class="sl-content-wrapper" style="width: 1280px; height: 658px;"><div class="sl-content"><div class="sl-slide-inner">
+							<div class="deco" data-icon="q"></div>
+							<h2>Regula aurea</h2>
+							<blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
+						</div></div></div>
+					</div><div class="sl-slide bg-3 sl-slide-horizontal" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1" style="display: none; z-index: 1;">
+						<div class="sl-content-wrapper" style="width: 1280px; height: 658px;"><div class="sl-content"><div class="sl-slide-inner">
+							<div class="deco" data-icon="O"></div>
+							<h2>Dum spiro, spero</h2>
+							<blockquote><p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the abattoirs.</p><cite>Dame Jane Morris Goodall</cite></blockquote>
+						</div></div></div>
+					</div><div class="sl-slide bg-4 sl-slide-vertical" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1" style="display: none; z-index: 1;">
+						<div class="sl-content-wrapper" style="width: 1280px; height: 658px;"><div class="sl-content"><div class="sl-slide-inner">
+							<div class="deco" data-icon="I"></div>
+							<h2>Donna nobis pacem</h2>
+							<blockquote><p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p><cite>Michael Klaper M.D.</cite></blockquote>
+						</div></div></div>
+					</div><div class="sl-slide bg-5 sl-slide-horizontal sl-trans-elems" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1" style="display: block; z-index: 1;">
+						<div class="sl-content-wrapper" style="width: 1280px; height: 658px;"><div class="sl-content"><div class="sl-slide-inner">
+							<div class="deco" data-icon="t"></div>
+							<h2>Acta Non Verba</h2>
+							<blockquote><p>I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.</p><cite>Margi Clarke</cite></blockquote>
+						</div></div></div>
+					</div></div>
+					
+					
+					
+					
+					
+					
+					
+					
+				</div><!-- /sl-slider -->
+				
+				<nav id="nav-arrows" class="nav-arrows">
+					<span class="nav-arrow-prev">Previous</span>
+					<span class="nav-arrow-next">Next</span>
+				</nav>
+
+				<nav id="nav-dots" class="nav-dots">
+					<span class=""></span>
+					<span class=""></span>
+					<span class=""></span>
+					<span class=""></span>
+					<span class="nav-dot-current"></span>
+				</nav>
+
+			</div><!-- /slider-wrapper -->
+
+        </div>
+		<script type="text/javascript" src="./Fullscreen Slit Slider with CSS3 and jQuery_files/jquery.min.js"></script>
+		<script type="text/javascript" src="./Fullscreen Slit Slider with CSS3 and jQuery_files/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="./Fullscreen Slit Slider with CSS3 and jQuery_files/jquery.slitslider.js"></script>
+		<script type="text/javascript">	
+			$(function() {
+			
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ),
+						$nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':last' ).on( 'click', function() {
+
+								slitslider.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':first' ).on( 'click', function() {
+								
+								slitslider.previous();
+								return false;
+
+							} );
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/**
+				 * Notes: 
+				 * 
+				 * example how to add items:
+				 */
+
+				/*
+				
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+			
+			});
+		</script>
+		<script src="./Fullscreen Slit Slider with CSS3 and jQuery_files/demoad.js"></script><div id="cdawrap"><div id="bsap_402" class="bsap" data-serve="CKSDE"><style type="text/css">
+.one{position:relative;}.one .bsa_it_ad{display:block;padding:15px;border:1px solid #e1e1e1;background:#f9f9f9;font-family:helvetica,arial,sans-serif;line-height:100%;position:relative;}.one .bsa_it_ad a{text-decoration:none;}.one .bsa_it_ad a:hover{text-decoration:none;}.one .bsa_it_ad .bsa_it_t{display:block;font-size:12px;font-weight:bold;color:#212121;line-height:125%;padding:0 0 5px 0;}.one .bsa_it_ad .bsa_it_d{display:block;font-size:11px;color:#434343;font-size:12px;line-height:135%;}.one .bsa_it_ad .bsa_it_i{float:left;margin:0 15px 10px 0;}.one .bsa_it_p{display:block;text-align:right;position:absolute;bottom:10px;right:15px;}.one .bsa_it_p a{font-size:10px;color:#666;text-decoration:none;}.one .bsa_it_ad .bsa_it_p a:hover{font-style:italic;}
+</style>
+<div class="bsa_it one"><!-- AdPacks.com Ad Code -->
+<script type="text/javascript" id="auto_1" class="ignoreme">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<!-- End AdPacks.com Ad Code -->
+
+<!-- AdPacks.com Zone Code -->
+<div id="bsap_1266962" class="bsap_1266962 bsap"><div class="bsa_it one"><div class="bsa_it_ad ad1 odd" id="bsa_3866511"><a href="http://stats.buysellads.com/click.go?z=1266962&b=3866511&g=&s=&sw=1280&sh=800&br=chrome,29,mac&r=0.4544153905007988&link=http://ad.doubleclick.net/jump/N8630.154632.FUSIONADS/B7853701;sz=130x100;ord=1383686815?" onmouseover="window.status = &#39;http://ad.doubleclick.net/jump/N8630.154632.FUSIONADS/B7853701;sz=130x100;ord=1383686815?&#39;; return true;" onmouseout="window.status=&#39;&#39;; return true;" target="_blank"><span class="bsa_it_i"><img src="./Fullscreen Slit Slider with CSS3 and jQuery_files/B7853701;sz=130x100" width="130" height="100" alt="Augmented Reality SDK"></span></a><a href="http://stats.buysellads.com/click.go?z=1266962&b=3866511&g=&s=&sw=1280&sh=800&br=chrome,29,mac&r=0.7226553752552718&link=http://ad.doubleclick.net/jump/N8630.154632.FUSIONADS/B7853701;sz=130x100;ord=[timestamp]?" onmouseover="window.status = &#39;http://ad.doubleclick.net/jump/N8630.154632.FUSIONADS/B7853701;sz=130x100;ord=[timestamp]?&#39;; return true;" onmouseout="window.status=&#39;&#39;; return true;" target="_blank"><span class="bsa_it_t">Augmented Reality SDK</span><span class="bsa_it_d">Developing with Augmented Reality? Register Here to Download the Vuforia SDK</span></a><div style="clear:both"></div></div><span class="bsa_it_p"><a href="http://buysellads.com/buy/detail/17086/zone/1266962?utm_source=site_17086&utm_medium=website&utm_campaign=imagetext&utm_content=zone_1266962">ads by BSA</a></span></div></div>
+<a href="http://adpacks.com/" id="bsap_aplink">via Ad Packs</a>
+<!-- End AdPacks.com Zone Code --><span class="bsa_it_p">
+<a href="http://buysellads.com/buy/detail/138927/zone/1286824?utm_source=site_138927&utm_medium=website&utm_campaign=imagetext&utm_content=zone_1286824">ads by BSA</a>
+</span>
+</div></div><span id="cda-remove"></span></div>
+	
+</body></html>
