@@ -1,0 +1,10 @@
+pom.xml
+*jar
+aw.config
+empty.config
+.lein-failures
+/lib/
+/classes/
+/target/
+.lein-deps-sum
+.lein-plugins
