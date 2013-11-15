@@ -1,0 +1,16 @@
+Array
+(
+    [contest_id] => 81
+    [sel] => 336730199717549
+    [hdnpic] => picture
+    [voteby] => like
+    [shronfacbook] => on
+    [shronemail] => on
+    [crfstart] => 2012-07-18
+    [crfend] => 2013-03-23
+    [cvofstart] => 2012-07-18
+    [cvofend] => 2013-03-23
+    [manualvali] => on
+    [minpersoninfo] => off
+    [plus18] => on
+)

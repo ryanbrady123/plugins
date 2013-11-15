@@ -1,0 +1,2 @@
+80.58.29.174:80 Received HTTP code 502 from proxy after CONNECT
+80.58.29.174:80 Received HTTP code 502 from proxy after CONNECT

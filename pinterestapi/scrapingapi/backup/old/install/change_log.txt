@@ -1,0 +1,7 @@
+p-manager-03-16-2012.zip		// with the mass follow, unfoloow pin and repin
+p-manager-03-23-2012.zip		// with the etsy type, create account(incomplete)
+p-manager-03-26-2012.zip		// with create, confirm accounts and master cron
+p-manager-03-29-2012.zip		// account creation, issue with error code
+p-manager-04-09-2012.zip		// added the repin mass scheduler
+p-manager-04-12-2012.zip		// with update profile feature
+p-manager-04-23-2012.zip		// with the create acccount issue solved, cc_feed type in repin

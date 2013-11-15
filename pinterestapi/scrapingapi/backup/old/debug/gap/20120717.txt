@@ -1,0 +1,7 @@
+
+ ------ search_user multi curl reponse -------
+ Process Time =  0.13437819480896
+ URL = a:1:{i:0;s:36:"http://pinterest.com/ gap/followers/";}
+ Result = a:1:{i:0;N;}
+ ---------------------------------------------------------------------- 
+ 
