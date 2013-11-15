@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Geo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Geo'), local('Geo-Regular'), url(http://themes.googleusercontent.com/static/fonts/geo/v5/av0TkpgOwGmqABT09bQMSA.woff) format('woff');
+}
